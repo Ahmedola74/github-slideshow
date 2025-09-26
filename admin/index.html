@@ -1,0 +1,164 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Dashboard — Ahmed Adel</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script type="module" src="../assets/js/admin.js" defer></script>
+  </head>
+  <body data-base-path="..">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="../" class="nav-brand" aria-label="Ahmed Adel home"><strong>Ahmed Adel</strong></a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="../" data-link="home">Home</a>
+          <a href="../works/" data-link="works">Works</a>
+          <a href="../contact/" data-link="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-width admin-wrapper">
+      <section class="auth-card" data-auth>
+        <h1>Dashboard access</h1>
+        <p class="text-muted">Enter the passphrase to manage projects. All changes are stored locally in your browser.</p>
+        <form data-auth-form>
+          <label>
+            <span class="text-muted">Passphrase</span>
+            <input type="password" name="password" required autocomplete="current-password" placeholder="••••••" />
+          </label>
+          <div class="form-actions" style="justify-content: center;">
+            <button class="btn btn-primary" type="submit">Unlock</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="admin-dashboard hidden" data-dashboard>
+        <header class="admin-header">
+          <div>
+            <h1>Projects dashboard</h1>
+            <p class="text-muted">Add a project once — it appears across the home, works hub, category pages, and detail view.</p>
+          </div>
+          <div class="admin-actions">
+            <button type="button" data-new-project>New project</button>
+            <button type="button" data-export>Export JSON</button>
+            <label>
+              Import JSON
+              <input type="file" accept="application/json" data-import hidden />
+            </label>
+            <button type="button" data-reset>Restore starter data</button>
+          </div>
+        </header>
+
+        <div class="projects-table" data-projects-table>
+          <table>
+            <thead>
+              <tr>
+                <th>Project</th>
+                <th>Section</th>
+                <th>Client</th>
+                <th>Year</th>
+                <th>Featured</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+
+        <form class="admin-form" data-project-form>
+          <h2 data-form-title>Create new project</h2>
+          <div class="form-grid">
+            <label>
+              Project name
+              <input type="text" name="projectName" required placeholder="Project title" />
+            </label>
+            <label>
+              Client
+              <input type="text" name="client" placeholder="Client name" />
+            </label>
+            <label>
+              Section
+              <select name="section" required>
+                <option value="Branding">Branding</option>
+                <option value="Social Media">Social Media</option>
+                <option value="UI/UX">UI/UX</option>
+                <option value="Videos">Videos</option>
+                <option value="Presentations">Presentations</option>
+                <option value="Layouting">Layouting</option>
+              </select>
+            </label>
+            <label>
+              Slug
+              <input type="text" name="slug" placeholder="auto-generated" />
+            </label>
+            <label>
+              Year
+              <input type="number" name="year" placeholder="2024" />
+            </label>
+            <label>
+              Display order
+              <input type="number" name="order" value="0" />
+            </label>
+          </div>
+
+          <label>
+            Story / captions
+            <textarea name="story" placeholder="Rich text supported with paragraphs."></textarea>
+          </label>
+
+          <label>
+            External link
+            <input type="url" name="externalLink" placeholder="https://" />
+          </label>
+
+          <div>
+            <span class="text-muted">Tags</span>
+            <div class="chips-input">
+              <div data-tag-list></div>
+              <input type="text" data-tag-input placeholder="Type tag and press Enter" />
+            </div>
+          </div>
+
+          <div>
+            <header class="section-heading" style="margin-bottom: 1rem;">
+              <div>
+                <h3 style="margin: 0;">Media gallery</h3>
+                <p class="text-muted">Add images or videos. Mark one as the cover to control thumbnails.</p>
+              </div>
+              <button type="button" data-add-media class="btn btn-secondary">Add media</button>
+            </header>
+            <div class="media-list" data-media-list></div>
+          </div>
+
+          <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+            <label class="toggle">
+              <input type="checkbox" name="featured" />
+              Feature on home carousel
+            </label>
+            <label class="toggle">
+              <input type="checkbox" name="published" checked />
+              Published (visible everywhere)
+            </label>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Save project</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

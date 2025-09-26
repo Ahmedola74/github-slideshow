@@ -1,0 +1,54 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Presentation Works — Ahmed Adel</title>
+    <meta name="description" content="Pitch decks and keynote storytelling crafted by Ahmed Adel." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../assets/css/styles.css" />
+    <script type="module" src="../../assets/js/category.js" defer></script>
+  </head>
+  <body data-base-path="../.." data-category="Presentations">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="../../" class="nav-brand" aria-label="Ahmed Adel home"><strong>Ahmed Adel</strong></a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="../../" data-link="home">Home</a>
+          <a href="../" data-link="works">Works</a>
+          <a href="../../contact/" data-link="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-width">
+      <section class="category-header">
+        <h1>Presentations</h1>
+        <p class="category-description" data-category-description></p>
+      </section>
+      <section class="works-grid" data-category-grid aria-live="polite"></section>
+    </main>
+
+    <footer>
+      <div class="max-width footer-grid">
+        <p>© <span id="current-year"></span> Ahmed Adel.</p>
+        <div class="socials">
+          <a href="https://behance.net/ahmedadel4" target="_blank" rel="noopener">Behance</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="../../admin/">Admin</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

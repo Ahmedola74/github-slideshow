@@ -1,13 +1,64 @@
-# Your GitHub Learning Lab Repository for Introducing GitHub
+# Ahmed Adel — Creative Portfolio
 
-Welcome to **your** repository for your GitHub Learning Lab course. This repository will be used during the different activities that I will be guiding you through. See a word you don't understand? We've included an emoji 📖 next to some key terms. Click on it to see its definition.
+A dark, futuristic portfolio experience for Ahmed Adel featuring deep-blue glassmorphism, responsive layouts, and an internal no-code dashboard. Projects are stored in a single JSON data source and rendered automatically across the home page, works hub, category views, and project detail template.
 
-Oh! I haven't introduced myself...
+## Features
 
-I'm the GitHub Learning Lab bot and I'm here to help guide you in your journey to learn and master the various topics covered in this course. I will be using Issue and Pull Request comments to communicate with you. In fact, I already added an issue for you to check out.
+- **Immersive landing page** with hero profile, featured carousel, tool stack, and a bento grid of disciplines.
+- **Works hub** with category, client, year, and text filters plus lazy-rendered project cards.
+- **Dedicated category pages** for Branding, Social Media, UI/UX, Videos, Presentations, and Layouting.
+- **Project detail template** with media galleries (images + videos), narrative blocks, share actions, and prev/next navigation.
+- **Contact page** with WhatsApp + email CTAs and a lightweight mailto form.
+- **Private admin dashboard** (`/admin`) to add, edit, reorder, and publish projects with media gallery management, tag chips, import/export, and reset-to-seed options.
+- **Local-first data flow** — dashboard changes persist in `localStorage` and can be exported as JSON to update the static data file.
 
-![issue tab](https://lab.github.com/public/images/issue_tab.png)
+## Getting Started
 
-I'll meet you over there, can't wait to get started!
+1. Install dependencies (optional for local development):
+   ```bash
+   npm install
+   ```
+2. Serve the site locally with any static server. For example:
+   ```bash
+   npx http-server . -c-1
+   ```
+3. Open `http://localhost:8080/` (or the port from your server).
 
-This course is using the :sparkles: open source project [reveal.js](https://github.com/hakimel/reveal.js/). In some cases we’ve made changes to the history so it would behave during class, so head to the original project repo to learn more about the cool people behind this project.
+## Managing Content
+
+1. Visit `/admin/` and unlock with the passphrase `blue-nebula-9090`.
+2. Create or edit projects using the form. Mark a media item as the cover to control thumbnails.
+3. Toggle **Featured** to surface a project in the home carousel. Toggle **Published** to hide or show it across the site.
+4. Use **Export JSON** to download your dataset. Replace `assets/data/projects.json` with the exported contents to deploy changes.
+5. **Import JSON** lets you load a previously exported dataset into local storage for further editing.
+
+## Project Structure
+
+```
+assets/
+  css/styles.css          # Global styles and theme tokens
+  data/projects.json      # Seed data consumed across the site
+  images/                 # Glassmorphism-ready SVG placeholders
+  js/
+    admin.js              # No-code dashboard logic
+    category.js           # Category listing renderer
+    contact.js            # Contact page interactions
+    home.js               # Landing page components
+    nav.js                # Shared navigation + utilities
+    projects.js           # Data layer for loading/persisting projects
+    project.js            # Project detail renderer
+    utils.js              # Helpers and constants
+works/                    # Works hub, categories, and project detail template
+admin/                    # Admin dashboard entry point
+contact/                  # Contact page
+index.html                # Landing page
+```
+
+## Deployment Notes
+
+- The site is static and works with GitHub Pages or any static host.
+- Dashboard edits are stored in the browser; export/import the JSON file for persistent updates in version control.
+- External video placeholders use openly licensed sample clips — replace them with production assets as needed.
+
+---
+Designed with deep navy gradients, neon accents, and glass panels to match Ahmed Adel’s futuristic brand voice.

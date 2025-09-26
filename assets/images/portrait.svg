@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <radialGradient id="portrait-grad" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1f6feb" />
+      <stop offset="100%" stop-color="#0b0f17" />
+    </radialGradient>
+  </defs>
+  <rect width="600" height="600" fill="#0b0f17" />
+  <circle cx="300" cy="280" r="220" fill="url(#portrait-grad)" opacity="0.7" />
+  <circle cx="300" cy="280" r="180" fill="#121828" />
+  <path d="M230 250c0-46 30-90 70-90s70 44 70 90-30 74-70 74-70-28-70-74z" fill="#1f2937" />
+  <path d="M180 420c28-58 80-88 120-88s92 30 120 88c-40 36-80 60-120 60s-80-24-120-60z" fill="#1f6feb" opacity="0.35" />
+  <text x="300" y="520" font-family="'Inter', sans-serif" font-size="48" fill="#e6ecf3" text-anchor="middle">Portrait Placeholder</text>
+</svg>
