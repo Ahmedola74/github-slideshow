@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200">
+  <rect width="800" height="1200" fill="#0b0f17" />
+  <rect x="220" y="140" width="360" height="920" rx="60" fill="#121828" stroke="#1f6feb" stroke-width="8" />
+  <rect x="260" y="260" width="280" height="520" rx="28" fill="#0f172a" />
+  <text x="400" y="860" font-family="'Inter', sans-serif" font-size="48" fill="#e6ecf3" text-anchor="middle">Mobile UI</text>
+</svg>

@@ -1,0 +1,201 @@
+{
+  "projects": [
+    {
+      "id": "f8b96aa2-224d-4d1c-9a4c-93e9f2721a41",
+      "projectName": "Trindiva Social Launch",
+      "client": "Trindiva",
+      "section": "Social Media",
+      "slug": "trindiva-social-launch",
+      "year": 2025,
+      "featured": true,
+      "order": 60,
+      "tags": ["Instagram", "Carousel", "Beauty"],
+      "story": "A social-first product reveal blending clean typography with dynamic product textures. Each frame was storyboarded for swipes and micro-animations, with a hero reel to launch the line.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/trindiva-cover.svg",
+          "alt": "Trindiva launch hero",
+          "isCover": true
+        },
+        {
+          "type": "image",
+          "src": "assets/images/trindiva-carousel-01.svg",
+          "alt": "Carousel slide"
+        },
+        {
+          "type": "video",
+          "src": "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4",
+          "poster": "assets/images/trindiva-reel-cover.svg",
+          "alt": "Launch reel preview"
+        }
+      ],
+      "externalLink": "https://behance.net/ahmedadel4",
+      "categoryPage": "/works/social-media",
+      "createdAt": "2024-01-15T09:00:00.000Z",
+      "updatedAt": "2024-01-15T09:00:00.000Z",
+      "published": true
+    },
+    {
+      "id": "9f5b8d1a-77a2-4e7e-b55f-e3d2dfd0163c",
+      "projectName": "Aqmaar Brand System",
+      "client": "Aqmaar",
+      "section": "Branding",
+      "slug": "aqmaar-brand-system",
+      "year": 2024,
+      "featured": true,
+      "order": 80,
+      "tags": ["Identity", "Guidelines", "Space"],
+      "story": "A flexible identity for a private aerospace start-up. Built around orbital trajectories, with responsive logotypes, tone-of-voice, and a UI kit prepared for future sprints.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/aqmaar-cover.svg",
+          "alt": "Aqmaar hero grid",
+          "isCover": true
+        },
+        {
+          "type": "image",
+          "src": "assets/images/aqmaar-logo-grid.svg",
+          "alt": "Logo grid"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/aqmaar-color.svg",
+          "alt": "Color tokens"
+        }
+      ],
+      "externalLink": "https://behance.net/ahmedadel4",
+      "categoryPage": "/works/branding",
+      "createdAt": "2024-02-20T12:00:00.000Z",
+      "updatedAt": "2024-02-20T12:00:00.000Z",
+      "published": true
+    },
+    {
+      "id": "b7f3d9cd-4da2-4691-84e7-75a6292dc6c1",
+      "projectName": "SIRB Website",
+      "client": "SIRB",
+      "section": "UI/UX",
+      "slug": "sirb-website",
+      "year": 2023,
+      "featured": true,
+      "order": 70,
+      "tags": ["Product", "Website", "Prototype"],
+      "story": "An enterprise-grade dashboard and marketing site built to explain complex drone logistics. Paired desktop and mobile flows, backed by a Figma prototype with micro-interaction notes.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/sirb-cover.svg",
+          "alt": "SIRB desktop UI",
+          "isCover": true
+        },
+        {
+          "type": "image",
+          "src": "assets/images/sirb-mobile.svg",
+          "alt": "Mobile prototype"
+        },
+        {
+          "type": "image",
+          "src": "assets/images/sirb-wireframes.svg",
+          "alt": "Wireframe overview"
+        }
+      ],
+      "externalLink": "https://www.figma.com/proto/",
+      "categoryPage": "/works/ui-ux",
+      "createdAt": "2023-11-01T10:00:00.000Z",
+      "updatedAt": "2023-11-01T10:00:00.000Z",
+      "published": true
+    },
+    {
+      "id": "cfde2746-9ebd-4a31-a837-0a15fbbf62d4",
+      "projectName": "CubeSat Cinematic",
+      "client": "CubeSat Teaser",
+      "section": "Videos",
+      "slug": "cubesat-cinematic",
+      "year": 2022,
+      "featured": false,
+      "order": 40,
+      "tags": ["Motion", "Cinematic", "Teaser"],
+      "story": "A launch tease for a miniature satellite program. Storyboarded beats, grade tests, and final motion with atmospheric FX for a sense of scale.",
+      "media": [
+        {
+          "type": "video",
+          "src": "https://samplelib.com/lib/preview/mp4/sample-5s.mp4",
+          "poster": "assets/images/cubesat-cover.svg",
+          "alt": "CubeSat teaser",
+          "isCover": true
+        },
+        {
+          "type": "image",
+          "src": "assets/images/cubesat-storyboard.svg",
+          "alt": "Storyboard frames"
+        }
+      ],
+      "externalLink": "https://behance.net/ahmedadel4",
+      "categoryPage": "/works/videos",
+      "createdAt": "2022-08-12T09:00:00.000Z",
+      "updatedAt": "2022-08-12T09:00:00.000Z",
+      "published": true
+    },
+    {
+      "id": "0d20316d-0db2-4c18-a0b6-7b6538bc1eb8",
+      "projectName": "Space Missions Deck",
+      "client": "Aqmaar Pitch",
+      "section": "Presentations",
+      "slug": "space-missions-deck",
+      "year": 2024,
+      "featured": false,
+      "order": 50,
+      "tags": ["Pitch", "Slides", "Strategy"],
+      "story": "An investor-facing story for Aqmaar detailing new orbital launch windows. 12-slide deck, modular layout system, and a data visualization suite for launch KPIs.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/space-deck-cover.svg",
+          "alt": "Deck cover",
+          "isCover": true
+        },
+        {
+          "type": "image",
+          "src": "assets/images/space-deck-slide.svg",
+          "alt": "Slide layout"
+        }
+      ],
+      "externalLink": "https://behance.net/ahmedadel4",
+      "categoryPage": "/works/presentations",
+      "createdAt": "2024-03-09T11:00:00.000Z",
+      "updatedAt": "2024-03-09T11:00:00.000Z",
+      "published": true
+    },
+    {
+      "id": "7c4b628b-bdee-4a1f-b61c-983f62702e5b",
+      "projectName": "Agri Poster Series",
+      "client": "EU-ZIRA3A",
+      "section": "Layouting",
+      "slug": "agri-poster-series",
+      "year": 2023,
+      "featured": false,
+      "order": 30,
+      "tags": ["Print", "Campaign", "Agritech"],
+      "story": "A campaign of layered poster designs for a sustainable agriculture consortium. Blend of satellite data overlays, typographic grids, and modular callouts.",
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/agri-poster-cover.svg",
+          "alt": "Poster hero",
+          "isCover": true
+        },
+        {
+          "type": "image",
+          "src": "assets/images/agri-poster-detail.svg",
+          "alt": "Poster detail"
+        }
+      ],
+      "externalLink": "https://behance.net/ahmedadel4",
+      "categoryPage": "/works/layouting",
+      "createdAt": "2023-04-22T11:00:00.000Z",
+      "updatedAt": "2023-04-22T11:00:00.000Z",
+      "published": true
+    }
+  ]
+}

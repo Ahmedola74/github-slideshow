@@ -1,13 +1,138 @@
 ---
-layout: presentation
 ---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ahmed Adel — Creative Portfolio</title>
+    <meta
+      name="description"
+      content="Dark futuristic portfolio for Ahmed Adel · Creative Director specializing in branding, UI/UX, social media, and cinematic storytelling."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script type="module" src="assets/js/home.js" defer></script>
+  </head>
+  <body data-base-path=".">
+    <header class="navbar" role="banner">
+      <div class="navbar-inner">
+        <a href="./" class="nav-brand" aria-label="Ahmed Adel home">
+          <strong>Ahmed Adel</strong>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="./" data-link="home">Home</a>
+          <a href="./works/" data-link="works">Works</a>
+          <a href="./contact/" data-link="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-{% for post in site.posts reversed %}
-	{% include slide.html %}
-	<div class="page-break"></div>
-{% endfor %}
-{% unless site.simple-slideshow %}
-{% if site.overview %}
-<section id="overview" class="step" {% for attr in site.overview-data %} data-{{attr[0]}}="{{attr[1]}}"{% endfor %}></section>
-{% endif %}
-{% endunless %}
+    <main>
+      <section class="hero" id="home">
+        <div class="max-width hero-grid glass-card">
+          <div class="hero-content">
+            <div class="particles" data-particles></div>
+            <span class="badge">Creative Director</span>
+            <h1>Ahmed Adel</h1>
+            <p class="lead">Brand &amp; UI/UX · Motion &amp; Social Campaigns · Future-facing storytelling</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./works/">View Works</a>
+              <a class="btn btn-secondary" href="./contact/">Contact</a>
+            </div>
+          </div>
+          <div class="hero-portrait">
+            <img src="assets/images/portrait.svg" alt="Portrait placeholder for Ahmed Adel" loading="lazy" />
+          </div>
+        </div>
+      </section>
+
+      <section class="max-width bio-tools" id="about">
+        <article class="glass-card bio-card">
+          <h2>Creative direction with a science fiction edge</h2>
+          <p>
+            I help visionary founders and teams translate complex ideas into magnetic visual stories. From orbital brand systems to
+            social-first launch campaigns, I design experiences that feel cinematic, tactile, and unmistakably future-ready.
+          </p>
+          <p class="text-muted">
+            Based in Cairo · Working globally across branding, UI/UX, social media systems, and motion-led storytelling.
+          </p>
+        </article>
+        <article class="glass-card">
+          <h2>Tools I use</h2>
+          <div class="tools-grid">
+            <span class="tool">Adobe Photoshop</span>
+            <span class="tool">Adobe Illustrator</span>
+            <span class="tool">Adobe After Effects</span>
+            <span class="tool">Adobe Premiere Pro</span>
+            <span class="tool">Figma</span>
+            <span class="tool">Blender</span>
+            <span class="tool">CapCut</span>
+            <span class="tool">Notion</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="max-width" aria-labelledby="featured-heading">
+        <div class="section-heading">
+          <h2 id="featured-heading">Featured work</h2>
+          <p class="text-muted">Curated highlights from social campaigns, brand systems, and immersive UI builds.</p>
+        </div>
+        <div class="carousel glass-card" data-home-carousel>
+          <div class="carousel-track"></div>
+          <button class="carousel-control prev" aria-label="Previous project">‹</button>
+          <button class="carousel-control next" aria-label="Next project">›</button>
+        </div>
+      </section>
+
+      <section class="max-width" aria-labelledby="bento-heading">
+        <div class="section-heading">
+          <h2 id="bento-heading">Kinds of work</h2>
+          <p class="text-muted">Browse by discipline — each tile pulls a live project from the dashboard.</p>
+        </div>
+        <div class="bento-grid" data-bento-grid></div>
+      </section>
+
+      <section class="max-width" aria-labelledby="recent-heading" id="works">
+        <div class="section-heading">
+          <h2 id="recent-heading">Latest releases</h2>
+          <a class="btn btn-secondary" href="./works/">View all works</a>
+        </div>
+        <div class="works-grid" data-home-works></div>
+      </section>
+
+      <section class="max-width contact-card" aria-labelledby="cta-heading">
+        <div class="section-heading">
+          <h2 id="cta-heading">Let’s build what’s next</h2>
+          <p class="text-muted">Ready for brand launches, product sprints, or cinematic storytelling.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/201234567890" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn btn-secondary" href="mailto:Ahmedadel7717@gmail.com">Email</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="max-width footer-grid">
+        <p>© <span id="current-year"></span> Ahmed Adel. Crafted with deep blue light.</p>
+        <div class="socials">
+          <a href="https://behance.net/ahmedadel4" target="_blank" rel="noopener">Behance</a>
+          <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="./admin/">Admin</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

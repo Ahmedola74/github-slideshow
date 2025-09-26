@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900">
+  <rect width="1400" height="900" fill="#0b0f17" />
+  <rect x="120" y="140" width="1160" height="620" rx="36" fill="#121828" />
+  <rect x="200" y="220" width="1000" height="460" rx="32" fill="#0f172a" stroke="#1f6feb" stroke-width="8" />
+  <text x="700" y="420" font-family="'Montserrat', 'Inter', sans-serif" font-size="110" fill="#e6ecf3" text-anchor="middle">SIRB</text>
+  <text x="700" y="500" font-family="'Inter', sans-serif" font-size="42" fill="#9aa3b2" text-anchor="middle">Enterprise Web UI</text>
+</svg>

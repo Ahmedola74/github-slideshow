@@ -1,0 +1,91 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Ahmed Adel</title>
+    <meta
+      name="description"
+      content="Reach Ahmed Adel for collaborations across branding, UI/UX, social media systems, motion design, and presentations."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script type="module" src="../assets/js/contact.js" defer></script>
+  </head>
+  <body data-base-path="..">
+    <header class="navbar">
+      <div class="navbar-inner">
+        <a href="../" class="nav-brand" aria-label="Ahmed Adel home"><strong>Ahmed Adel</strong></a>
+        <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="../" data-link="home">Home</a>
+          <a href="../works/" data-link="works">Works</a>
+          <a href="./" data-link="contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="max-width contact-wrapper">
+      <header class="section-heading" style="flex-direction: column; align-items: flex-start;">
+        <h1>Let’s create something orbit-shifting</h1>
+        <p class="text-muted">
+          Tell me about your mission. I work with founders, agencies, and product teams to shape bold visual narratives.
+        </p>
+      </header>
+
+      <section class="contact-grid">
+        <article class="contact-card">
+          <h2>Direct lines</h2>
+          <p class="text-muted">Always open for partnerships, retainer work, and launch collaborations.</p>
+          <div class="hero-actions" style="margin-top: 1.5rem;">
+            <a class="btn btn-primary" href="https://wa.me/201234567890" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a class="btn btn-secondary" href="mailto:Ahmedadel7717@gmail.com">Email Ahmed</a>
+          </div>
+        </article>
+
+        <article class="contact-card">
+          <h2>Send a note</h2>
+          <form class="contact-form" data-contact-form>
+            <label>
+              <span class="text-muted">Name</span>
+              <input type="text" name="name" required placeholder="Your name" />
+            </label>
+            <label>
+              <span class="text-muted">Email</span>
+              <input type="email" name="email" required placeholder="you@example.com" />
+            </label>
+            <label>
+              <span class="text-muted">Project details</span>
+              <textarea name="message" required placeholder="Tell me about your project"></textarea>
+            </label>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">Compose email</button>
+            </div>
+            <p class="status-message" data-form-status></p>
+          </form>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="max-width footer-grid">
+        <p>© <span id="current-year"></span> Ahmed Adel.</p>
+        <div class="socials">
+          <a href="https://behance.net/ahmedadel4" target="_blank" rel="noopener">Behance</a>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="../admin/">Admin</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

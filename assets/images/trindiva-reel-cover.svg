@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="grad-trindiva-reel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f6feb" />
+      <stop offset="100%" stop-color="#121828" />
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="#0b0f17" />
+  <rect x="120" y="200" width="840" height="1520" rx="60" fill="url(#grad-trindiva-reel)" opacity="0.85" />
+  <text x="540" y="1020" font-family="'Montserrat', 'Inter', sans-serif" font-size="110" fill="#e6ecf3" text-anchor="middle">Reel</text>
+  <text x="540" y="1140" font-family="'Inter', sans-serif" font-size="54" fill="#9aa3b2" text-anchor="middle">Launch Preview</text>
+</svg>

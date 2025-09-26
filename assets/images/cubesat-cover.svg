@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <radialGradient id="grad-cubesat" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#1f6feb" />
+      <stop offset="100%" stop-color="#0b0f17" />
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="800" fill="#0b0f17" />
+  <circle cx="600" cy="400" r="320" fill="url(#grad-cubesat)" opacity="0.8" />
+  <text x="600" y="420" font-family="'Montserrat', 'Inter', sans-serif" font-size="120" fill="#e6ecf3" text-anchor="middle">CubeSat</text>
+  <text x="600" y="510" font-family="'Inter', sans-serif" font-size="44" fill="#9aa3b2" text-anchor="middle">Cinematic Teaser</text>
+</svg>
